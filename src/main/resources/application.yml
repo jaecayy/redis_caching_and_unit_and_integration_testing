@@ -15,4 +15,4 @@ spring:
       cache-null-values: false
       key-prefix: student
       use-key-prefix: true
-      time-to-live: 60000
+      time-to-live: 120000

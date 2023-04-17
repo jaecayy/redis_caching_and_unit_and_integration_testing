@@ -65,10 +65,10 @@ public class StudentService {
     }
 
 
-//    @Scheduled(initialDelay = 60000, fixedRate = 60000)
-//    @CacheEvict(value = "allStudents", allEntries = true)
-//    public void clearCache() {
-//        logger.info("old cache deleted , new cache is created");
-//        getStudents();
-//    }
+    @Scheduled(initialDelay = 60000, fixedRate = 60000)
+    @CacheEvict(value = "allStudents", allEntries = true)
+    public void clearCache() {
+        logger.info("old cache deleted , new cache is created");
+        getStudents();
+    }
 }
